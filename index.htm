@@ -3,31 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        
-    </style>
+    <title>Kim Minhyuk's Homepage (22201008)</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 </head>
-<body>Welcome to 김민혁's Homepage (22201008)
-    Use the menu to select different Stylesheets
-    
-    <a href="style1.htm">Stylesheet 1</a>
-    <a href="style2.htm">Stylesheet 2</a>
-    Stylesheet 3
-    Stylesheet 4
-    No Stylesheet
-    Same Page Different Stylesheets
-    This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
-    Stylesheet1, Stylesheet2, Stylesheet3, Stylesheet4.
-    
-    No Styles
-    This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
-    No Stylesheet.
-    
-    Side-Bar
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-    
+<body>
+
+    <div class="container mt-4">
+        <h1 class="text-primary">Welcome to Kim Minhyuk's Homepage (22201008)</h1>
+        <p class="lead">Use the buttons below to select different Bootstrap themes.</p>
+
+        <!-- Buttons for selecting different themes -->
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary" onclick="switchStyle('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css')">Default Bootstrap</button>
+            <button type="button" class="btn btn-success" onclick="switchStyle('https://stackpath.bootstrapcdn.com/bootswatch/5.3.0-alpha1/flatly/bootstrap.min.css')">Flatly Theme</button>
+            <button type="button" class="btn btn-dark" onclick="switchStyle('https://stackpath.bootstrapcdn.com/bootswatch/5.3.0-alpha1/darkly/bootstrap.min.css')">Darkly Theme</button>
+            <button type="button" class="btn btn-danger" onclick="switchStyle('https://stackpath.bootstrapcdn.com/bootswatch/5.3.0-alpha1/cyborg/bootstrap.min.css')">Cyborg Theme</button>
+        </div>
+        <footer class="mt-4">
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS and necessary scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function switchStyle(sheet) {
+            document.getElementById('bootstrap-css').setAttribute('href', sheet);
+        }
+    </script>
+
 </body>
 </html>
+
