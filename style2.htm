@@ -3,41 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kim Minhyuk's Homepage (22201008)</title>
+    <title>Welcome to Kim Minhyeok's Homepage (22201008)</title>
     <style>
-       
         body {
             font-family: Arial, sans-serif;
-            background-color: #cc3b3b; 
+            background-color: tomato; 
             color: white;
             margin: 0;
             padding: 0;
         }
 
-       
         .container {
-            width: 80%;
+            
             margin: 0 auto;
             padding: 20px;
         }
 
-        
         h1 {
-            background-color: #cc3b3b;
+            background-color: tomato;
             color: white;
-            text-align: center;
             font-size: 3em;
             margin: 0;
             padding: 20px;
         }
 
-       
         p.lead {
-            text-align: center;
             font-size: 1.5em;
+            margin-left: 20px;
         }
 
-        
         ul {
             list-style-type: none;
             padding: 0;
@@ -49,54 +43,56 @@
         }
 
         a {
-            color: #ffffff;
+            color: tomato;
             text-decoration: none;
             font-weight: bold;
         }
 
-        
         .content {
             background-color: white;
-            color: black;
+            color: tomato;
             padding: 20px;
-            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
         }
 
         .content h2 {
-            color: #cc3b3b;
+            color: tomato;
         }
 
-        .content a {
-            color: #cc3b3b;
+        .content p {
+            color: black;
+            font-size: 15px;
         }
-
         
+        .content h3 {
+            color: tomato;
+        }
+
+        .content h4 {
+            color: tomato;
+        }
+
         .sidebar {
             background-color: #f8d8d8;
-            color: #cc3b3b;
-            padding: 20px;
-            margin-top: 20px;
+            color: tomato;
         }
 
-       
         footer {
-            background-color: #cc3b3b;
+            background-color: tomato;
             padding: 10px;
             color: white;
             text-align: center;
         }
 
-       
         .sidebar-buttons {
-            float: right;
             display: flex;
             flex-direction: column;
-            align-items: flex-end;
-            margin-top: 20px;
+            align-items: flex-end; 
         }
 
         .sidebar-buttons button {
-            background-color: #d34242;
+            background-color: tomato;
             color: white;
             border: 2px solid white;
             border-radius: 20px;
@@ -108,46 +104,44 @@
 
         .sidebar-buttons button.active {
             background-color: white;
-            color: #cc3b3b;
+            color: tomato;
         }
-
     </style>
 </head>
 <body>
 
-    <h1>Welcome to Kim Minhyeok's Homepage (22201008)</h1>
+    <h1>Welcome to Kim Minhyuk's Homepage (22201008)</h1>
     <p class="lead">Use the menu to select different Stylesheets</p>
 
     <div class="container">
 
         <div class="content">
-            <h2>Same Page Different Stylesheets</h2>
-            <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:</p>
-            <p><a href="#">Stylesheet1</a>, <a href="#">Stylesheet2</a>, <a href="#">Stylesheet3</a>, <a href="#">Stylesheet4</a>.</p>
+            <div class="main-content">
+                <h2>Same Page Different Stylesheets</>
+                <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:</p>
+                <h4><a href="#">Stylesheet1</a>, <a href="#">Stylesheet2</a>, <a href="#">Stylesheet3</a>, <a href="#">Stylesheet4</a>.</h4>
+                <h2>No Styles</h2>
+                <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:</p> 
+                <h4>No Stylesheet.</h4>
+            </div>
 
-            <h3>No Styles</h3>
-            <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet: <a href="#">No Stylesheet</a>.</p>
+            <div class="sidebar-buttons">
+                <button>Stylesheet 1</button>
+                <button class="active">Stylesheet 2</button>
+                <button>Stylesheet 3</button>
+                <button>Stylesheet 4</button>
+                <button>No Stylesheet</button>
+            </div>
         </div>
 
-    
         <div class="sidebar">
             <h3>Side-Bar</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
         </div>
-
-       
-        <div class="sidebar-buttons">
-            <button class="active">Stylesheet 1</button>
-            <button>Stylesheet 2</button>
-            <button>Stylesheet 3</button>
-            <button>Stylesheet 4</button>
-            <button>No Stylesheet</button>
-        </div>
-
     </div>
 
     <footer>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
     </footer>
 
 </body>
