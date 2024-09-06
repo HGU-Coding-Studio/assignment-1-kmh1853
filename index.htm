@@ -37,8 +37,8 @@
         <p class="lead">Use the menu to select different Stylesheets.</p>
         
         <ul>
-            <li><a href="#" onclick="LoadStyle('style1.htm')" class="active">Stylesheet 1</a></li>
-            <li><a href="#" onclick="LoadStyle('style2.htm')" class="active">Stylesheet 2</a></li>
+            <li><a href="#" onclick="openPage('style1.htm')" class="active">Stylesheet 1</a></li>
+            <li><a href="#" onclick="openPage('style2.htm')" class="active">Stylesheet 2</a></li>
             <li>Stylesheet 3</li>
             <li>Stylesheet 4</li>
             <li>No Stylesheet</li>
@@ -48,7 +48,7 @@
         <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:</p>
 
         <ul>
-            <a href="#" onclick="LoadStyle('style1.htm')">Stylesheet1</a>, <a href="#" onclick="LoadStyle('style2.htm')">Stylesheet2</a>, Sytesheet3, Stylesheet4
+            <a href="#" onclick="openPage('style1.htm')">Stylesheet1</a>, <a href="#" onclick="openPage('style2.htm')">Stylesheet2</a>, Sytesheet3, Stylesheet4
            
         </ul>
 
@@ -65,22 +65,11 @@
         </footer>
     </div>
 
-    <script> function LoadStyle(page) {
-        if (page) {
-            fetch(page)
-                .then(response => response.text())
-                .then(data => {
-                    const parser = new DOMParser();
-                    const doc = parser.parseFromString(data, 'text/html');
-                    const styleContent = doc.querySelector('style') ? doc.querySelector('style').innerHTML : '';
-                    document.getElementById('dynamic-style').innerHTML = styleContent;
-                })
-                .catch(error => console.error('Error fetching style:', error));
-        } else {
-            document.getElementById('dynamic-style').innerHTML = '';
+    <script>
+        function openPage(page) {
+            window.location.href = page; 
         }
-    }
-</script>
+    </script>
 
 </body>
 </html>
